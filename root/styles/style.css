@@ -1,83 +1,54 @@
 html {
-    box-sizing: border-box;
-    font-family: 'national park';
-    font-size: 16px;
+  font-family: "national park";
+  font-size: 16px;
 }
 body {
-    margin: 0;
-    overflow-x: hidden;
+  margin: 0;
+  overflow-x: hidden;
 }
 .egg {
-    width: 650px;
-    height: 913px;
-    background-color:rgb(248, 246, 245);
-    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    border: hotpink 8px solid;
-
-}
-/* .container {
-    width: 70vw;
-    height: 90vw;
-    padding: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    background-color:darksalmon;
-    font-size: 0.9rem;
-    border-radius: 30%;
-} */
-.container-tatmagotchi {
-    width: 70%;
-    height: auto;
-    padding: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(94, 67, 116);
-    font-size: 0.7rem;
-    border-radius: 30%;
-    border: medium solid rgb(210, 148, 199);
+  width: 615px;
+  height: 900px;
+  background-color: rgb(224, 182, 161);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  border: hotpink 9px solid;
 }
 img {
-    height: 510px;
-    margin-left: auto;
-    margin-right: auto;   
-}
+  height: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 210px;
+ }
 .buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  align-items: center;
 }
 .buttons input[type="button"] {
-    padding: 0.5rem;
-    margin: 1rem;
-    border-radius: 40%;
-    font-weight: bold;
-    border: none;
-    align-items: center;
-  }
-
-  .status,
-  .alert {
-    text-align: center;
-    font-weight: bold;
-  }
-
-  /* .status {
-    background-color: salmon;
-    width: 80%;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 0.5rem;
-    border: thin solid white;
-  } */
-
-  .box {
-    width: 50%;
-    height: auto;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 40%;
+  font-weight: bold;
+  border: none;
+  align-items: center;
 }
-  
 
+.status,
+.alert {
+  font-weight: bold;
+}
+
+.status {
+  background-color: salmon;
+  width: 80%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0.5rem;
+  border: thin solid white;
+}
+
+.box {
+  text-align: center;
+}

@@ -73,8 +73,79 @@ class Tamagotchi {
   }
 
   statusReview() {
-    
+    if (this.hungry >= 60) {
+      this.showAlert(`{$this.name} miawww is hungry, "Feed me human!"`);
+      this.showStatus();
+    }
+
+    if (this.happy <= 20) {
+      this.showAlert(`{$this.name} is sad and devastated. "Play whit me!"`);
+      this.showStatus();
+    }
+
+    if (this.energy <= 20) {
+      this.showAlert(`{$this.name} is tired. "I need a nap"`);
+      this.showStatus();
+
+    }
+
+    // me faltan más acciones(sleep,play,cry,eat)
   }
 
+  showStatus() {
+    const statusElement = document.getElementById("status");
+    statusElement.innerHTML = `Hungry: ${this.hungry}, Happy: ${this.happy}, Energy: ${this.energy}`;
+  }
 
+showAlert() {
+  const alert = document.getElementById("aleert");
+  alert.innerHTML = messageAlert;
 }
+
+reborn() {
+  if (this.hungry >= 100 || this.happy <= 0 || this.energy <= 0) {
+    this.showAlert(`${this.name} has 6 more lives`);
+    this.hungry = 0;
+    this.happy = 0;
+    this.energy = 100;
+  }
+}
+}
+
+const Catmagotchi = new Tamagotchi();
+
+life = setTimeout(() => {
+  Catmagotchi.showStatus();
+  Catmagotchi.actualStatus();
+}, 200000);
+
+Catmagotchi.born();
+Catmagotchi.showStatus();
+Catmagotchi.actualStatus();
+
+const $btnEat = document.getElementById("btn-eat"),
+  $btnPlay = document.getElementById("btn-play");
+  $btnSleep = document.getElementById("btn-sleep");
+
+  function changeStatus(imagen) {
+    const $imagen = document.getElementById("tamagotchi");
+    $imagen.src = imagen;
+  }
+
+  document.addEventListener("click", (e) => {
+    if (e.target === $btnEat) {
+      changeStatus("./assets/eating-unscreen.gif");
+      Catmagotchi.eat();
+      Catmagotchi.showStatus();
+    }
+    if (e.target === $btnPlay) {
+      changeStatus("./assets/playing-unscreen.gif");
+      Catmagotchi.play();
+      Catmagotchi.showStatus();
+    }
+    if (e.target === $btnSleep) {
+      changeStatus("./assets/sleep-unscreen.gif");
+      Catmagotchi.sleep();
+      Catmagotchi.showStatus();
+    }
+  });
