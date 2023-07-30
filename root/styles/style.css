@@ -7,18 +7,17 @@ body {
   overflow-x: hidden;
 }
 .egg {
-  width: 615px;
-  height: 900px;
+  width: 382px;
+  height: 539px;
   background-color: rgb(224, 182, 161);
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   border: hotpink 9px solid;
 }
 img {
-  height: 380px;
+  height: 245px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 210px;
- }
+  }
 .buttons {
   display: flex;
   justify-content: center;
@@ -34,11 +33,6 @@ img {
   align-items: center;
 }
 
-.status,
-.alert {
-  font-weight: bold;
-}
-
 .status {
   background-color: salmon;
   width: 80%;
@@ -46,8 +40,7 @@ img {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 0.5rem;
-  border: thin solid white;
-}
+  }
 
 .box {
   text-align: center;
