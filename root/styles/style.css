@@ -12,6 +12,7 @@ body {
   background-color: rgb(224, 182, 161);
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   border: hotpink 9px solid;
+  justify-content: center;
 }
 img {
   height: 245px;

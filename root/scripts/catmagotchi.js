@@ -151,33 +151,33 @@
 //   });
 
 
-function initPet(pet) {
-    const petName = pet;
-    let energy = 100;
-    let age = 0;
-    let status = "";
-    petEnergy.textContent = `Energy:${energy}`;
+// function initPet(pet) {
+//     const petName = pet;
+//     let energy = 100;
+//     let age = 0;
+//     let status = "";
+//     petEnergy.textContent = `Energy:${energy}`;
 
-    return {
-        sleep: function () {
-            if (energy <= 80) {
-                img.src = 'assets/sleeping-unscreen.gif';
-                petMessage.textContent = `${petName} is sleeping`;
-                status = "sleeping";
-                age++;
-                energy += 20;
-                petEnergy.textContent = `Energy:${energy}`;
+//     return {
+//         sleep: function () {
+//             if (energy <= 80) {
+//                 img.src = 'assets/sleeping-unscreen.gif';
+//                 petMessage.textContent = `${petName} is sleeping`;
+//                 status = "sleeping";
+//                 age++;
+//                 energy += 20;
+//                 petEnergy.textContent = `Energy:${energy}`;
 
-                return {
-                    energy,
-                    age,
-                    status,
-                };
+//                 return {
+//                     energy,
+//                     age,
+//                     status,
+//                 };
                
-            }  else if (status === 'sleeping') {
-               img.src = 'assests/happy-unscreen.gif';
-               petMessage.textContent = 
-            }
-        }
-    }
-}
+//             }  else if (status === 'sleeping') {
+//                img.src = 'assests/happy-unscreen.gif';
+//                petMessage.textContent = 
+//             }
+//         }
+//     }
+// }
